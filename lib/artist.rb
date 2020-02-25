@@ -5,10 +5,10 @@ class Artist
   attr_reader :songs
   
   extend Memorable::ClassMethods
-  extend Findable::ClassMethods
   include Memorable::InstanceMethods
-  include Paramable::InstanceMethods
-
+  extend Findable
+  include 
+  
   @@artists = []
 
   def initialize
